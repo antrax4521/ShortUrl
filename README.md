@@ -23,7 +23,7 @@ The Shorturl Core was created thinking in the basics of microservices architectu
 You can see the service's documentation from your brower in the next url.
 
 ```
-http://18.223.117.228/docs
+https://allgo.mx/docs
 ```
 
 
