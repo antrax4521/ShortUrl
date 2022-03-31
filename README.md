@@ -7,6 +7,8 @@ ShortUrl core is build with:
 - FastApi
 - Python 3
 - Postgresql
+- Docker
+- Docker-Compose
 - Poetry
 - Pytest
 
