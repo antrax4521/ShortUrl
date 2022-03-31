@@ -11,6 +11,22 @@ ShortUrl core is build with:
 - Pytest
 
 
+## Why FastApi?
+
+FastApi is a powerfull Framework that allows develop fast and with less bugs, it uses Pydantic to validate the incoming making the develop process more easy and with less bugs.
+
+The Shorturl Core was created thinking in the basics of microservices architecture based in the principle of single responsibility of the elements.
+
+
+## Live Test & Documentation
+
+You can see the service's documentation from your brower in the next url.
+
+```
+http://18.223.117.228/docs
+```
+
+
 ## Project setup
 
 Copy env.example to .env
@@ -21,12 +37,12 @@ cp env.example .env
 
 Once you have the .env you need to build the docker.
 ```
-CURRENT_UID=$(id -u):$(id -u) docker-compose -f docker-compose-stg.yml build --build-arg user_id=$(id -u)
+CURRENT_UID=$(id -u):$(id -u) docker-compose -f docker-compose-dev.yml build --build-arg user_id=$(id -u)
 ```
 
 Then start the service.
 ```
-CURRENT_UID=$(id -u):$(id -u) docker-compose -f docker-compose-stg.yml up
+CURRENT_UID=$(id -u):$(id -u) docker-compose -f docker-compose-dev.yml up
 ```
 
 Finally run the migrations to create the models in the database.
@@ -122,3 +138,11 @@ And then run the pytest commands.
 pytest app/tests/api/api_v1/short_url.py <= Run the test making a request to the service.
 pytest app/tests/crud/test_crud.py <= Persist to the database.
 ```
+
+## Author
+
+- Alfredo Gómez 
+
+## Final words
+
+Talk is cheap, show me the code! :)=
