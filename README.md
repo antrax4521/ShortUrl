@@ -21,7 +21,7 @@ cp env.example .env
 
 Once you have the .env you need to build the docker.
 ```
-CURRENT_UID=$(id -u):$(id -u) docker-compose -f docker-compose-stg.yml build --build-arg user_id=$(id -u)
+CURRENT_UID=$(id -u):$(id -u) docker-compose -f docker-compose-dev.yml build --build-arg user_id=$(id -u)
 ```
 
 Then start the service.
